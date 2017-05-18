@@ -49,7 +49,7 @@ describe("Car Class: Create a car, make it drive", function() {
 
     it("The car drive function should return the instance of the Car class", function() {
       var man  = new Car('MAN', 'Truck', 'trailer');
-      var drivingMan = man.drive(7);
+      var drivingMan = man;
       expect(drivingMan instanceof Car).toBeTruthy();
       expect(typeof drivingMan.drive).toBe(typeof (function (){}));
       expect(man.speed).toBe(drivingMan.speed);

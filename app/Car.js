@@ -13,7 +13,7 @@ var Car = module.exports = function (name='General', model='GM',type){
 	}
 	
 
-	if (this.type == 'trailer'){
+	if (this.type === 'trailer'){
 		this.numOfWheels = 8;
 		this.isSaloon = false;
 		this.speed = '0 km/h';
@@ -36,5 +36,7 @@ var Car = module.exports = function (name='General', model='GM',type){
 
 	}
 }
+
+var honda = new Car('Honda');
 
 module.exports = Car;
